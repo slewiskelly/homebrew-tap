@@ -5,20 +5,20 @@
 class Ock < Formula
   desc "A tool for querying and validating document metadata."
   homepage "https://github.com/slewiskelly/ock"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slewiskelly/ock/releases/download/v0.1.1/ock_0.1.1_darwin_amd64.tar.gz"
-      sha256 "94ee603623a09cd63ed0e8a3bfb2a6ca11a7673954e43f703205ff1e02732357"
+      url "https://github.com/slewiskelly/ock/releases/download/v0.1.2/ock_0.1.2_darwin_amd64.tar.gz"
+      sha256 "6cfbbe8dfeeff7dbb0ec67f0e24eff7ce646d58c10751df6fa5e09ef07311923"
 
       def install
         bin.install "ock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slewiskelly/ock/releases/download/v0.1.1/ock_0.1.1_darwin_arm64.tar.gz"
-      sha256 "89181a5261c440cc2a0a1118e18b2c07d4b035c289ae5b2c00deb6eab07d3f54"
+      url "https://github.com/slewiskelly/ock/releases/download/v0.1.2/ock_0.1.2_darwin_arm64.tar.gz"
+      sha256 "f63bbceaf104e7d07186831bf9548f35a4bdfccee878789105387df7cf4b5104"
 
       def install
         bin.install "ock"
@@ -29,8 +29,8 @@ class Ock < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/slewiskelly/ock/releases/download/v0.1.1/ock_0.1.1_linux_amd64.tar.gz"
-        sha256 "82fb14575d6e2200032f3f17a45c5da5f01dc36e4309ddfc02a9b5d7fc7c90f1"
+        url "https://github.com/slewiskelly/ock/releases/download/v0.1.2/ock_0.1.2_linux_amd64.tar.gz"
+        sha256 "7fa446aba74054db56d23e898063941023c000e0d4ae4fc7ca133d431474f523"
 
         def install
           bin.install "ock"
@@ -39,8 +39,8 @@ class Ock < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/slewiskelly/ock/releases/download/v0.1.1/ock_0.1.1_linux_arm64.tar.gz"
-        sha256 "103700b69c4afc76d925ed60ac9cd8e5d2774d13da9a7fea21426a06dccc56cb"
+        url "https://github.com/slewiskelly/ock/releases/download/v0.1.2/ock_0.1.2_linux_arm64.tar.gz"
+        sha256 "1540948a003af3e30c8d87327f87105e0eff259aa158ab0b0fb0c9646a716e39"
 
         def install
           bin.install "ock"
